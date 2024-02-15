@@ -93,6 +93,7 @@ button.play {
     font-family: comic-font;
     font-size: 1.5rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .gameboard {
@@ -114,6 +115,7 @@ button.play {
 }
 .x-mark-shadow:hover, .o-mark-shadow:hover {
     filter: invert(99%) sepia(3%) saturate(338%) hue-rotate(241deg) brightness(116%) contrast(80%);
+    cursor: pointer;
 }
 
 dialog form {
@@ -136,4 +138,5 @@ input[type='button'] {
     background-color: lightgreen;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
