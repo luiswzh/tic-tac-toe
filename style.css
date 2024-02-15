@@ -1,0 +1,43 @@
+@font-face {
+    font-family: bouncy-font;
+    src: url(./fonts/bouncy_2/Bouncy-Black-PERSONAL_USE_ONLY.otf);
+}
+@font-face {
+    font-family: comic-font;
+    src: url(./fonts/hey_comic/Hey\ Comic.otf);
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    font-family: comic-font, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    font-family: bouncy-font;
+    padding: 50px;
+
+    font-size: 4rem;
+    color: red;
+}
+
+footer {
+    a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: black;
+        img {
+            width: 30px;
+        }
+    }
+    padding: 20px;
+    
+}
+
