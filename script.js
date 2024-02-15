@@ -195,3 +195,6 @@ const gameboard = (function () {
     };
 })();
 
+const dialog = document.querySelector('dialog');
+
+dialog.showModal();

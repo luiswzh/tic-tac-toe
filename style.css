@@ -2,16 +2,18 @@
     font-family: bouncy-font;
     src: url(./fonts/bouncy_2/Bouncy-Black-PERSONAL_USE_ONLY.otf);
 }
+
 @font-face {
     font-family: comic-font;
     src: url(./fonts/hey_comic/Hey\ Comic.otf);
 }
+
 body {
     margin: 0;
     width: 100vw;
     height: 100vh;
 
-    font-family: comic-font, sans-serif;
+    font-family: comic-font, cursive;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,14 +32,108 @@ footer {
     a {
         display: flex;
         align-items: center;
+
         gap: 10px;
         text-decoration: none;
         color: black;
+
         img {
             width: 30px;
         }
     }
+
     padding: 20px;
-    
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+    .separator {
+        font-size: 50px;
+    }
+
+}
+
+.x-player, .o-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 50px;
+    }
+    
+    .name {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .score {
+        font-size: 3rem;
+        margin: 0;
+        color: blue;
+    }
+
+}
+
+button.play {
+    width: 150px;
+    height: 50px;
+    background-color: lightgreen;
+    border: none;
+    font-family: comic-font;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.gameboard {
+    width: calc(100vh - 500px);
+    height: calc(100vh - 500px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: black;
+}
+
+.tile {
+    background-color: white;
+}
+
+.x-mark-shadow, .o-mark-shadow{
+    filter: invert(99%) sepia(7%) saturate(47%) hue-rotate(38deg) brightness(115%) contrast(100%);
+}
+.x-mark-shadow:hover, .o-mark-shadow:hover {
+    filter: invert(99%) sepia(3%) saturate(338%) hue-rotate(241deg) brightness(116%) contrast(80%);
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+input {
+    width: 300px;
+    height: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: comic-font;
+}
+
+input[type='button'] {
+    width: 200px;
+    height: 50px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+}
