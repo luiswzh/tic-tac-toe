@@ -8,5 +8,55 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header>
+        tic-tac-toe
+    </header>
+    <div class="content">
+        <div class="scoreboard">
+            <div class="x-player">
+                <img src="./images/alpha-x.svg" alt="x-mark">
+                <p class="x-name"></p>
+                <p class="x-score"></p>
+            </div>
+            <div class="separator">-</div>
+            <div class="o-player">
+                <img src="./images/alpha-o.svg" alt="o-mark">
+                <p class="o-name"></p>
+                <p class="o-score"></p>
+            </div>
+        </div>
+        <div class="gameboard">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        <button class="play">PLAY</button>
+    </div>
+    <footer>
+        <a href="https://github.com/luiswzh/tic-tac-toe">
+            <img src="./images/github-mark.svg" alt="github logo">
+            luiswzh 2024
+        </a>
+    </footer>
+    <dialog>
+        <form action="dialog">
+            <label for="x-player">X-Player: </label>
+            <input type="text" name="x-player" id="x-player">
+
+            <label for="o-player">O-Player: </label>
+            <input type="text" name="o-player" id="o-player">
+
+            <label for="rounds">Rounds: </label>
+            <input type="number" name="rounds" id="rounds">
+
+            <input type="button" value="START GAME">
+        </form>
+    </dialog>
 </body>
 </html>
